@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <?php 
-        $valor1 = $_GET['var1'] ?? 0; #
-        $valor2 = $_GET['var2'] ?? 0;
-        $butao0 = 0;
-        $butao1 = 1;
-    ?>
-    <main>
-        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
-            <label for='var1'>Valor 1</label>
-            <input type="number" name="var1" id="valor1" value="<?=$valor1?>">
-            <label for="var2"> Valor 2</label>
-            <input type="number" name="var2" id="valor2" value="<?=$valor2?>">
-            <input type="submit" value="Somar">
-            
-            <input type="button" name="but" id="butao0" value="<?=$butao0?> <?php echo "0"?>">
-            <input type="button" name="but" id="butao1" value="<?php echo "1"?>">
-        </form>
-    </main>
+    
 
-    <section id="resulatado">
-        <h2>resultado</h2>
-        <?php 
-            $soma = $valor1 + $valor2;
-            if ($soma ==0):
-                echo "<P>Digite numeros</p>";
-            else:
-                print "<p>A soma de $valor1 e $valor2 é igual a $soma.</p>";
-            
-            endif;
-            
-        ?>
-    </section>
+<main>
+    <form name="calculadora">
+        <input type="texfield" name="valor" value="">
+        <br>
+        <input type="button" value="1" onclick="document.calculadora.valor.value+='1'">
+        <input type="button" value="2" onclick="document.calculadora.valor.value+='2'">
+        <input type="button" value="3" onclick="document.calculadora.valor.value+='3'">
+        <input type="button" value="+" onclick="document.calculadora.valor.value+='+'">
+        <br>
+        <input type="button" value="4" onclick="document.calculadora.valor.value+='4'">
+        <input type="button" value="5" onclick="document.calculadora.valor.value+='5'">
+        <input type="button" value="6" onclick="document.calculadora.valor.value+='6'">
+        <input type="button" value="-" onclick="document.calculadora.valor.value+='-'">
+        <br>
+        <input type="button" value="7" onclick="document.calculadora.valor.value+='7'">
+        <input type="button" value="8" onclick="document.calculadora.valor.value+='8'">
+        <input type="button" value="9" onclick="document.calculadora.valor.value+='9'">
+        <input type="button" value="X" onclick="document.calculadora.valor.value+='*'">
+        <br>
+        <input type="button" value="," onclick="document.calculadora.valor.value+='.'">        
+        <input type="button" value="0" onclick="document.calculadora.valor.value+='0'">
+        <input type="button" value="/" onclick="document.calculadora.valor.value+='/'">
+
+        <input type="button" value="=" onclick="document.calculadora.valor.value=eval(document.calculadora.valor.value)">
+
+        <input type="reset" value="C">
+        
+
+    </form>
+</main>
+
+
 </body>
 </html>
