@@ -11,7 +11,7 @@
 
 <main>
     <form name="calculadora">
-        <input type="texfield" name="valor" value="">
+        <input type="textfield" name="valor" value="">
         <br>
         <input type="button" value="1" onclick="document.calculadora.valor.value+='1'">
         <input type="button" value="2" onclick="document.calculadora.valor.value+='2'">
