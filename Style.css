@@ -30,25 +30,24 @@
 
     main {
         background-color: white;
-        background-color: #291f6c;
+        /*background-color: #291f6c;*/
         color: white;
         text-align: center;
         margin-top: auto;
-        padding: 5px;
     }
 
     /* DISIGN DO FORMULARIO*/
 
 
     form {
-        background-color: rgba(234, 156, 243, 0.2);
-        padding: 90px 20px 90px 20px;
-        border-radius: 12px;
+        /*background-color: rgba(234, 156, 243, 0.2);*/
+        border-style: solid;
+        border-color: #11db83;
     }
 
 
     input[type=reset] {
-        padding: 12px 24px;
+        padding: 24px 24px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -56,34 +55,52 @@
         margin: 2px 2px;
         border: none;
         cursor: pointer;
+        background-color: #ef9228 ;
+    }
+
+    input[type=reset]:hover {
+        background-color: #f5a64c;
+        
     }
 
     input[type=button] {
-        padding: 12px 24px;
+        background-color: white;
+        padding: 24px 24px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 17px;
-        margin: 2px 2px;
+        margin: 2px 0px;
         text-decoration: none;
         border: none;
         cursor: pointer;
+        font-size: 17px;
+        outline: none;
+        position: relative;
     }
     input[type=button]:hover, buttom:hover {
         background-color: #11db83;
         
     }
 
-    input[type=texfield] {
+    input[type=textfield] {
+        background-color: #11db83;
+        background-size: contain;
         font-size: 18px;
         padding: 24px;
         margin: 12px;
+        border: none;
         
     }
 
+    input[type=textfield]:hover {
+        background-color: #4cf0a9;
+        
+    }
+
+
     input[id=igual] {
         width: 90%;
-        background-color: #11db83;
+        background-color: #090a07;
         font-size: 1em;
         color: white;
         padding: 10px 20px;
