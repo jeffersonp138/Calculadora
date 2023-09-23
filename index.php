@@ -26,15 +26,15 @@
         <input type="button" value="7" onclick="document.calculadora.valor.value+='7'">
         <input type="button" value="8" onclick="document.calculadora.valor.value+='8'">
         <input type="button" value="9" onclick="document.calculadora.valor.value+='9'">
-        <input type="button" value="X" onclick="document.calculadora.valor.value+='*'">
+        <input type="button" value="x" onclick="document.calculadora.valor.value+='*'">
         <br>
         <input type="button" value="," onclick="document.calculadora.valor.value+='.'">        
         <input type="button" value="0" onclick="document.calculadora.valor.value+='0'">
         <input type="button" value="/" onclick="document.calculadora.valor.value+='/'">
-
-        <input type="button" value="=" onclick="document.calculadora.valor.value=eval(document.calculadora.valor.value)">
-
         <input type="reset" value="C">
+        <br>
+        <input type="button" value="=" id="igual" onclick="document.calculadora.valor.value=eval(document.calculadora.valor.value)">
+        
         
 
     </form>
