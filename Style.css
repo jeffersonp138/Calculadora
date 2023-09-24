@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
     *{
-        font-family: Verdana, Geneva, Verdana, Geneva, Tahoma, 
-        sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         box-sizing: border-box;
     }
 
@@ -27,10 +26,8 @@
         max-width: 400px;
     }
 
-
     main {
         background-color: white;
-        /*background-color: #291f6c;*/
         color: white;
         text-align: center;
         margin-top: auto;
@@ -40,55 +37,54 @@
 
 
     form {
-        /*background-color: rgba(234, 156, 243, 0.2);*/
         border-style: solid;
         border-color: #11db83;
     }
 
-
     input[type=reset] {
-        padding: 24px 24px;
+        width: 55px;
+        height: 55px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 17px;
-        margin: 2px 2px;
+        font-size: 20px;
+        margin: 0px -3px;
         border: none;
         cursor: pointer;
         background-color: #ef9228 ;
     }
 
     input[type=reset]:hover {
-        background-color: #f5a64c;
+        background-color: #edac62;
         
     }
 
     input[type=button] {
         background-color: white;
-        padding: 24px 24px;
+        width: 55px;
+        height: 55px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin: 2px 0px;
+        margin: 0px -3px;
         text-decoration: none;
         border: none;
-        cursor: pointer;
-        font-size: 17px;
+        font-size: 20px;
         outline: none;
         position: relative;
     }
-    input[type=button]:hover, buttom:hover {
-        background-color: #11db83;
-        
+
+    input[type=button]:hover {
+        background-color: #cae2d9;
     }
 
     input[type=textfield] {
         background-color: #11db83;
         background-size: contain;
         font-size: 18px;
-        padding: 24px;
-        margin: 12px;
+        height: 50px;
         border: none;
+        margin: 5px 5px;
         
     }
 
@@ -97,15 +93,20 @@
         
     }
 
-
     input[id=igual] {
         width: 90%;
+        height: 55px;
         background-color: #090a07;
-        font-size: 1em;
+        font-size: 2em;
         color: white;
-        padding: 10px 20px;
         margin: 5px 0;
         border: none;
         border-radius: 7px;
         cursor: pointer;
+    }
+
+    input[id=igual]:hover{
+        background-color: #aaf6d5;
+        color: #000;
+        
     }
