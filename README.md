@@ -1,2 +1,2 @@
-# Calculadora
- Uma calculadora em PHP
+# Calculadoras
+Projetos básicos do tipo calculadora
