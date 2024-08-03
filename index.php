@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    
-
 <main>
     <form name="calculadora">
         <input type="textfield" name="valor" value="">
@@ -33,13 +31,21 @@
         <input type="button" value="/" onclick="document.calculadora.valor.value+='/'">
         <input type="reset" value="C">
         <br>
-        <input type="button" value="=" id="igual" onclick="document.calculadora.valor.value=eval(document.calculadora.valor.value)">
-        
-        
-
+        <input type="button" value="=" id="igual" onclick="calculate()">
     </form>
 </main>
 
+<script>
+    function calculate() {
+        try {
+            document.calculadora.valor.value = eval(document.calculadora.valor.value);
+        } catch (e) {
+            document.calculadora.valor.value = 'Erro';
+        }
+    }
+</script>
 
 </body>
 </html>
+
+
